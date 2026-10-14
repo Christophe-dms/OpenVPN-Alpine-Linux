@@ -11,5 +11,5 @@ La securité est paramétrée et assurée avec fail2ban et communique avec votre
 Il faudra également gerer home assistant pour tenir compte des alertes de OPENVPN
  nota : home assistant est capable de vous fournir l'adresse IP extérieur de votre box et de la transmettre par notrification notamment si elle change
 
- Nota vous pouvez tout mieux comprendre en le faisant manuellement à l'aide du tuto creationserveur.pdf
+ Nota vous pouvez tout mieux comprendre en le faisant manuellement à l'aide du tuto RedactionServeurVPN.pdf
  
