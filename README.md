@@ -1,4 +1,4 @@
-OpenVPN-Alpine-Linux Fonctionnel sur Raspberry PI 1 / zero
+#OpenVPN-Alpine-Linux Fonctionnel sur Raspberry PI 1 / zero
 
 Une fois le script effectué vous récuperez le certificat pour le client dans /etc/openvpn/client1.opvn
 
