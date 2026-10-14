@@ -33,7 +33,7 @@ actions:
       title: Alerte Intrusion OpenVpn
 mode: single
 
-Home assistant est capable de vous fournir l'adresse IP de votre box :
+Home assistant est capable de vous fournir l'adresse IP exterieure de votre box :
 - Ajouter dans /homeassistant/configuration.yaml
 sensor:
   - platform: rest
