@@ -1,8 +1,8 @@
 OpenVPN-Alpine-Linux Fonctionnel sur Raspberry PI 1 / zero
 
-Une fois le script effectué vous récuperez le certificat pour le client dans /etc/openvpn/client1.opvn
+Une fois le script effectué le serveur est opérationnel 
 
-Le serveur est opérationnel
+vous récuperez le certificat pour le client dans /etc/openvpn/client1.opvn
 
 La securité est paramétrée et assurée avec fail2ban et communique avec votre broker Mqtt notamment home assistant en cas d'attaque et banit l'ip attaquante
 
