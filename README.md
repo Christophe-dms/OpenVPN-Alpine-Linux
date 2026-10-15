@@ -6,18 +6,20 @@ Le tout en <b>< 150 Mo</b> (vous avez bien lu < 150 Mo)
 
 Je considère que Alpine est installée
 
-Une fois le script effectué le serveur est opérationnel 
+- Utiliser Script-Creation-ServeurOPENVPN.sh répondez aux question et le serveur sera prêt rapidement
+- Parametrer la un chemin NAT sur la box (voir fichier lisezmoi.pdf)
+  
+  facultatif :
+- Pour home assistant ajouter les lignes de codes yaml au fichier de configuration pour recevoir des notification en cas d'attaque
 
-vous récuperez le certificat pour le client dans /etc/openvpn/client1.opvn (le nom indiqué avec le script)
+- Il ne reste plus qu'à récuperer le certificat pour le client dans /etc/openvpn/client1.opvn (le nom indiqué avec le script)
 
-La securité est assurée par fail2ban qui communique avec votre broker Mqtt notamment home assistant.
+La securité est assurée par fail2ban qui peut communiquer avec votre broker Mqtt notamment home assistant.
 En cas d'attaque et fail2ban banit l'ip attaquante et vous etes notifié sur votre telephone
-
-Il faudra parametrer un chemin NAT dans la box (voir fichier lisezmoi.pdf)
 
 Pour tenir compte des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
 
- nota : home assistant est capable de vous fournir l'adresse IP extérieur de votre box et de la transmettre par notification notamment si elle change
+<b>Remarque Importante : home assistant est capable de vous transmettre votre adresse IP exterieur si elle change par notification sur votre telephone</b>
 
 Vous pouvez également le mettre en place pas à pas en le faisant manuellement à l'aide du tuto Creation-ServeurOPENVPN-Manuelle.pdf
  
