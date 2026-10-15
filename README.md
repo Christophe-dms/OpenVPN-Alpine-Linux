@@ -19,5 +19,5 @@ Pour tenir compte des alertes de OPENVPN , il faudra gerer Home assistant préci
 
  nota : home assistant est capable de vous fournir l'adresse IP extérieur de votre box et de la transmettre par notification notamment si elle change
 
-Vous pouvez également apprendre pas à pas en le faisant manuellement à l'aide du tuto RedactionServeurVPN.pdf
+Vous pouvez également le mettre en place pas à pas en le faisant manuellement à l'aide du tuto Creation-ServeurOPENVPN-Manuelle.pdf
  
