@@ -6,11 +6,11 @@ Le tout en <b>< 150 Mo</b> (vous avez bien lu < 150 Mo)
 
 Je considère que Alpine est installée
 
-- Utiliser Script-Creation-ServeurOPENVPN.sh répondez aux question et le serveur sera prêt rapidement
-- Parametrer la un chemin NAT sur la box (voir fichier lisezmoi.pdf)
+- Utiliser Script-Creation-ServeurOPENVPN.sh répondez aux questions et le serveur sera prêt rapidement
+- Paramétrer la un chemin NAT sur la box (voir fichier lisezmoi.pdf)
   
   facultatif :
-- Pour home assistant ajouter les lignes de codes yaml au fichier de configuration pour recevoir des notification en cas d'attaque
+- Pour home assistant ajouter les lignes de codes yaml au fichier de configuration pour recevoir des notification sur téléphone en cas d'attaque
 
 - Il ne reste plus qu'à récuperer le certificat pour le client dans /etc/openvpn/client1.opvn (le nom indiqué avec le script)
 
