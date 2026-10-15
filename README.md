@@ -2,7 +2,7 @@
 
 <font size="+1">Utilisation de <b>Alpine Linux, OpenVPN, Fail2ban</b></font>
 
-Le tout en < 150 Mo (vous avez bien lu < 150 Mo)
+Le tout en <b>< 150 Mo</b> (vous avez bien lu < 150 Mo)
 
 Je considère que Alpine est installée
 
