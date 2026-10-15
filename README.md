@@ -17,7 +17,7 @@ Il faudra parametrer un chemin NAT dans la box (voir fichier lisezmoi.pdf)
 
 Pour tenir compte des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
 
- nota : home assistant est capable de vous fournir l'adresse IP extérieur de votre box et de la transmettre par notrification notamment si elle change
+ nota : home assistant est capable de vous fournir l'adresse IP extérieur de votre box et de la transmettre par notification notamment si elle change
 
 Vous pouvez également apprendre pas à pas en le faisant manuellement à l'aide du tuto RedactionServeurVPN.pdf
  
