@@ -1,4 +1,4 @@
-<b> Objectif : faire d'un raspberry PI 1 / zero un veritable serveur VPN </b>
+<font size="+2"><b> Objectif : faire d'un raspberry PI 1 / zero un veritable serveur VPN </b></font>
 
 Utilisation de Alpine Linux, OpenVPN, Fail2ban
 
