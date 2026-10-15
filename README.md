@@ -1,6 +1,6 @@
 <font size="+2"><b> Objectif : faire d'un raspberry PI 1 / zero un veritable serveur VPN </b></font>
 
-Utilisation de Alpine Linux, OpenVPN, Fail2ban
+<font size="+1">Utilisation de <b>Alpine Linux, OpenVPN, Fail2ban</b></font>
 
 Le tout en < 150 Mo (vous avez bien lu < 150 Mo)
 
