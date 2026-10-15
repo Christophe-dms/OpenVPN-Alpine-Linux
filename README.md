@@ -1,4 +1,8 @@
-OpenVPN-Alpine-Linux Fonctionnel sur Raspberry PI 1 / zero
+Objectif : faire d'un raspberry PI 1 / zero un veritable serveur VPN
+
+Utilisation de Alpine Linux, OpenVPN, Fail2ban
+
+Le tout en < 150 Mo (vous avez bien lu < 150 Mo)
 
 Je considère que Alpine est installée
 
