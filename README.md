@@ -14,7 +14,7 @@ Je considère que Alpine est installée
 
 - Il ne reste plus qu'à récuperer le certificat pour le client dans /etc/openvpn/client1.opvn (le nom indiqué avec le script)
 
-La securité est assurée par fail2ban qui peut communiquer avec votre broker Mqtt notamment home assistant.
+- La securité est assurée par fail2ban qui peut communiquer avec votre broker Mqtt notamment home assistant.
 En cas d'attaque et fail2ban banit l'ip attaquante et vous etes notifié sur votre telephone
 
 Pour tenir compte des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
