@@ -259,7 +259,7 @@ apk add logrotate
 echo "# Safety limit: rotate immediately if a log reaches 10M " >> /etc/logrotate.conf
 echo "size 10M" >> /etc/logrotate.conf
 rc-service openvpn start
-echo "recuperer votre certificat client dans /etc/openvpn"
+echo "***** IMPORTANT ****** recuperer votre certificat client dans /etc/openvpn"
 read -n 1 -s -p "Appuyez sur une touche pour continuer..."
 
 
