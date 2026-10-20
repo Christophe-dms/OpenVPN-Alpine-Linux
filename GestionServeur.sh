@@ -27,6 +27,7 @@ while true; do
             read -p "Entrer l'adresse IP Exterieure de la box [a.b.c.d]: " ipbox
             read -p "Entrer le port Exterieur de la box pour le VPN: " portext
             #generation des clés pour le certificat dans /etc/easy-rsa/pki issued et private
+            cd /etc/easy-rsa
             echo "yes"| ./easyrsa gen-req "$certifname" nopass
             echo "yes" | ./easyrsa --passin="pass:$passca" sign-req client "$certifname"
             #creation du profil dans cd /etc/openvpn
