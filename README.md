@@ -12,12 +12,12 @@ Je considère que Alpine est installée
   facultatif :
 - Pour home assistant ajouter les lignes de codes yaml au fichier de configuration pour recevoir des notification sur téléphone en cas d'attaque
 
-- Il ne reste plus qu'à récuperer le certificat pour le client dans /etc/openvpn/client1.opvn (le nom indiqué avec le script)
+- Il ne reste plus qu'à récuperer le certificat pour le client dans /etc/openvpn avec le nom.ovpn que vous avez indiqué à la création
 
 - La securité est assurée par fail2ban qui peut communiquer avec votre broker Mqtt notamment home assistant.
-En cas d'attaque et fail2ban banit l'ip attaquante et vous etes notifié sur votre telephone
+En cas d'attaque et fail2ban banit l'ip attaquante et vous pouvez etre notifié sur votre telephone
 
-Pour tenir compte des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
+Pour recevoir des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
 
 <b>Remarque Importante : home assistant est capable de vous transmettre votre adresse IP exterieur si elle change par notification sur votre telephone</b>
 
