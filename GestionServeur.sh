@@ -86,7 +86,7 @@ exit 0
             cd /etc/easy-rsa
             ./easyrsa revoke $certifname
             ./easyrsa gen-crl
-            rm /etc/openvpn/"$certifname".opvn
+            rm /etc/openvpn/"$certifname".ovpn
             read -p "Appuyez sur Entrée pour continuer..."
             ;;
         3)
