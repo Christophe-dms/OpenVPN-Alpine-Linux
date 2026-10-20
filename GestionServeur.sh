@@ -19,8 +19,9 @@ while true; do
 
     case $choix in
         1)
-            echo "Liste des certificats"
-            ls /etc/openvpn/*.ovpn
+            echo "Liste des certificats existants"
+            cd /etc/openvpn
+            ls *.ovpn
             echo "Creation d'un certificat"
             read -p "Donner un nom pour le certicat: " certifname
             read -p "Entrer l'adresse IP Exterieure de la box [a.b.c.d]: " ipbox
