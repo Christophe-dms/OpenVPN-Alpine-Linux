@@ -9,7 +9,7 @@ fi
 #modification du depot APK
 sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
 apk update
-Clear
+clear
 read -p "Entrer l'adresse IP Exterieure de la box [a.b.c.d]: " ipbox
 read -p "Entrer le port Exterieur de la box pour le VPN: " portext
 read -p "Entrer le port d'écoute du vpn: " portint
