@@ -29,7 +29,7 @@ read -p "Entrer User mosquitto: " mosquitto
 read -s -p "Entrer mot de passe mosquitto: " mdpmosq
 echo
 fi
-read -p "Voulez vous creer un user spécifique pour la gestion (o/n): " repuser
+read -p "Voulez vous creer un user pour la gestion du serveur (o/n): " repuser
 if [ "$repuser" = "o" ]; then
 read -p "Entrer le nom: " nom
 adduser -D $nom
@@ -38,10 +38,8 @@ echo "$nom:$passnom" | chpasswd
 adduser $nom wheel
 apk add sudo
 mkdir -p /etc/sudoers.d
-if ! grep -q "%wheel" /etc/sudoers /etc/sudoers.d/* 2>/dev/null; then
     echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
     chmod 440 /etc/sudoers.d/wheel
-fi
 fi
 # installation de openvpn et easy-rsa
 apk add openvpn easy-rsa
