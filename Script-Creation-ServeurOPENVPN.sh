@@ -29,7 +29,7 @@ read -p "Entrer User mosquitto: " mosquitto
 read -s -p "Entrer mot de passe mosquitto: " mdpmosq
 echo
 fi
-read -p "Voulez vous creer un user pour la gestion du serveur (o/n): " repuser
+read -p "Voulez vous creer un administrateur pour la gestion du serveur (o/n): " repuser
 if [ "$repuser" = "o" ]; then
 read -p "Entrer le nom: " nom
 adduser -D $nom
