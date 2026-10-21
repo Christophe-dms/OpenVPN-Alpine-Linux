@@ -1,6 +1,4 @@
 #!/bin/sh
-clear
-#Recuperationdesdonnees
 # modification des depots pour extension
 # Vérifie si sed est installé, sinon l'installe
 if ! command -v sed &> /dev/null; then
@@ -10,6 +8,7 @@ fi
 sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
 apk update
 clear
+#Recuperationdesdonnees
 read -p "Entrer l'adresse IP Exterieure de la box [a.b.c.d]: " ipbox
 read -p "Entrer le port Exterieur de la box pour le VPN: " portext
 read -p "Entrer le port d'écoute du vpn: " portint
