@@ -1,6 +1,15 @@
 #!/bin/sh
 clear
 #Recuperationdesdonnees
+# modification des depots pour extension
+# Vérifie si sed est installé, sinon l'installe
+if ! command -v sed &> /dev/null; then
+    apk add --no-cache sed
+fi
+#modification du depot APK
+sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
+apk update
+Clear
 read -p "Entrer l'adresse IP Exterieure de la box [a.b.c.d]: " ipbox
 read -p "Entrer le port Exterieur de la box pour le VPN: " portext
 read -p "Entrer le port d'écoute du vpn: " portint
@@ -27,22 +36,14 @@ read -p "Entrer le nom: " nom
 adduser -D $nom
 read -s -p "Entrer le mot de passe :" passnom
 echo "$nom:$passnom" | chpasswd
+adduser $nom wheel
+apk add sudo
 mkdir -p /etc/sudoers.d
 if ! grep -q "%wheel" /etc/sudoers /etc/sudoers.d/* 2>/dev/null; then
     echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
     chmod 440 /etc/sudoers.d/wheel
 fi
 fi
-adduser $nom wheel
-apk add sudo
-#modification du depot APK
-# Vérifie si sed est installé, sinon l'installe
-if ! command -v sed &> /dev/null; then
-    apk add --no-cache sed
-fi
-sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
-apk update
-
 # installation de openvpn et easy-rsa
 apk add openvpn easy-rsa
 mkdir -p /etc/easy-rsa
