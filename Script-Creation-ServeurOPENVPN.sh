@@ -21,6 +21,14 @@ read -p "Entrer User mosquitto: " mosquitto
 read -s -p "Entrer mot de passe mosquitto: " mdpmosq
 fi
 echo
+#modification du depot APK
+# Vérifie si sed est installé, sinon l'installe
+if ! command -v sed &> /dev/null; then
+    apk add --no-cache sed
+fi
+sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
+apk update
+
 read -p "Voulez vous creer un user spécifique pour la gestion (o/n): " repuser
 if [ "$repuser" = "o" ]; then
 apk add sudo
@@ -35,13 +43,6 @@ if ! grep -q "%wheel" /etc/sudoers /etc/sudoers.d/* 2>/dev/null; then
 fi
 adduser $nom wheel
 fi
-#modification du depot APK
-# Vérifie si sed est installé, sinon l'installe
-if ! command -v sed &> /dev/null; then
-    apk add --no-cache sed
-fi
-sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
-apk update
 # installation de openvpn et easy-rsa
 apk add openvpn easy-rsa
 mkdir -p /etc/easy-rsa
