@@ -1,10 +1,9 @@
 #!/bin/sh
-# modification des depots pour extension
 # Vérifie si sed est installé, sinon l'installe
 if ! command -v sed &> /dev/null; then
     apk add --no-cache sed
 fi
-#modification du depot APK
+#modification du depot APK si necessaire
 sed -i '\|/media/cdrom/apks|!s/^#//' /etc/apk/repositories
 apk update
 clear
