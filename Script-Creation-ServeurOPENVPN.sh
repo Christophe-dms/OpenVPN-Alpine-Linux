@@ -34,7 +34,9 @@ if [ "$repuser" = "o" ]; then
 read -p "Entrer le nom: " nom
 adduser -D $nom
 read -s -p "Entrer le mot de passe :" passnom
+echo
 echo "$nom:$passnom" | chpasswd
+echo
 adduser $nom wheel
 apk add sudo
 mkdir -p /etc/sudoers.d
