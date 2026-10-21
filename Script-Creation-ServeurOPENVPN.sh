@@ -29,7 +29,6 @@ read -s -p "Entrer le mot de passe :" passnom
 echo "$nom:$passnom" | chpasswd
 apk add sudo
 mkdir -p /etc/sudoers.d
-
 if ! grep -q "%wheel" /etc/sudoers /etc/sudoers.d/* 2>/dev/null; then
     echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
     chmod 440 /etc/sudoers.d/wheel
