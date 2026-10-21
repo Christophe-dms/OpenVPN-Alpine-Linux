@@ -19,10 +19,10 @@ if [ "$repbroker" = "o" ]; then
 read -p "Enter adresse IP Home Assistant ou Broker Mqtt [z.y.x.w]: " ipha
 read -p "Entrer User mosquitto: " mosquitto
 read -s -p "Entrer mot de passe mosquitto: " mdpmosq
+echo
 fi
 read -p "Voulez vous creer un user spécifique pour la gestion (o/n): " repuser
 if [ "$repuser" = "o" ]; then
-apk add sudo
 read -p "Entrer le nom: " nom
 adduser -D $nom
 read -s -p "Entrer le mot de passe :" passnom
