@@ -23,11 +23,11 @@ fi
 echo
 read -p "Voulez vous creer un user spécifique pour la gestion (o/n): " repuser
 if [ "$repuser" = "o" ]; then
+apk add sudo
 read -p "Entrer le nom: " nom
 adduser -D $nom
 read -s -p "Entrer le mot de passe :" passnom
 echo "$nom:$passnom" | chpasswd
-sudo apk add sudo
 mkdir -p /etc/sudoers.d
 if ! grep -q "%wheel" /etc/sudoers /etc/sudoers.d/* 2>/dev/null; then
     echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
