@@ -12,13 +12,15 @@ afficher_menu() {
     echo "4. Etat des prisons "
     echo "5. Debannir une IP "
     echo "6. Port à l'écoute "
-    echo "7. Quitter"
+    echo "7. Voir direct /var/log/messages"
+    echo "8. Voir direct /var/log/fail2ban.log"
+    echo "9. Quitter"
     }
 
 # Boucle principale
 while true; do
     afficher_menu
-    read -p "Faites votre choix [1-7] : " choix
+    read -p "Faites votre choix [0-9] : " choix
 
     case $choix in
         0)
@@ -137,7 +139,13 @@ exit 0
             read -p "Appuyez sur Entrée pour continuer..."
             ;;
          7)
-            exit 0
+            tail -f /var/log/messages
             ;;
+         8)
+           tail -f /var/log/fail2ban.log
+           ;;
+         9)
+           exit 0
+          ;;
     esac
 done
