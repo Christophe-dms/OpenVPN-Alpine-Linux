@@ -6,7 +6,7 @@ Le tout en <b>< 150 Mo</b> (vous avez bien lu < 150 Mo)
 
 Je considère que Alpine est installée
 
-- Utiliser Script-Creation-ServeurOPENVPN.sh répondez aux questions et le serveur sera prêt rapidement
+- Utiliser OPENVPN-Server-Creator répondez aux questions et le serveur sera prêt rapidement
 - Paramétrer un chemin NAT sur la box (voir fichier lisezmoi.pdf)
   
   facultatif :
@@ -23,3 +23,4 @@ Pour recevoir des alertes de OPENVPN , il faudra gerer Home assistant précision
 
 Vous pouvez également le mettre en place pas à pas en le faisant manuellement à l'aide du tuto Creation-ServeurOPENVPN-Manuelle.pdf
  
+Une fois terminé utilisez Tools-GestionServer pour gestion des certificats / adresse Bannies etc ...
