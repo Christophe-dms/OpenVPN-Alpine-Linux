@@ -21,7 +21,7 @@ if [ "$passca" != "$passcabis" ]; then
 echo "--------- les mots de passes sont différents ---------- ARRET DU SCRIPT -------- "
 exit 1
 fi
-read -p  "Entrer le nom du certificat pour les clients [client1]: " certiname
+read -p  "Entrer le nom du certificat pour les clients : " certiname
 read -p "Voulez vous etablir une surveillance vers un broker Mqtt (Home assistant)-(o/n): " repbroker
 if [ "$repbroker" = "o" ]; then
 read -p "Enter adresse IP Home Assistant ou Broker Mqtt [z.y.x.w]: " ipha
