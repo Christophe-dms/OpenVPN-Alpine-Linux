@@ -130,8 +130,8 @@ exit 0
             echo "=== Prison : $jail ==="
             sudo fail2ban-client status "$jail" | grep "Banned IP list"
             done
-            read -p "entrer l'adresse IP à liberer" ipaddress
-            fail2ban-client uban $ipaddress
+            read -p "entrer l'adresse IP à liberer :" ipaddress
+            fail2ban-client unban $ipaddress
             read -p "Appuyer sur la touche entrée ... "
             ;;
          6)
