@@ -118,11 +118,14 @@ exit 0
             read -p "Appuyez sur Entrée pour continuer..."
             ;;
         4)
-            echo "Liste des prisons de Fail2ban"
-            fail2ban-client status
-            read -p "Indiquez la prison à consulter :" prison
-            fail2ban-client status $prison
-            read -p "Appuyez sur Entrée pour continuer..."
+            echo "Etat des prisons Fail2ban"
+            fail2ban-client status | grep "Jail list" | sed -E 's/^[^:]*:[ \t]*//' | tr ',' '\n' | while read jail; do
+            echo "=== Prison : $jail ==="
+            sudo fail2ban-client status "$jail"
+            done
+            read -p "entrer l'adresse IP à liberer :" ipaddress
+            fail2ban-client unban $ipaddress
+            read -p "Appuyer sur la touche entrée ... "
             ;;
          5)
             echo "liste des adresses IP bannies par Fail2ban"
