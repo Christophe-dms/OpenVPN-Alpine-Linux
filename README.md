@@ -19,7 +19,7 @@ En cas d'attaque et fail2ban banit l'ip attaquante et vous pouvez etre notifié 
 
 Pour recevoir des alertes de OPENVPN , il faudra gerer Home assistant précisions dans le fichier lisezmoi.pdf
 
-<b>Remarque Importante : home assistant est capable de vous transmettre votre adresse IP exterieur si elle change par notification sur votre telephone</b>
+<b>Remarque Importante : home assistant est capable de vous transmettre votre adresse IP exterieure si elle change par notification sur votre telephone</b>
 
 Vous pouvez également le mettre en place pas à pas en le faisant manuellement à l'aide du tuto Creation-ServeurOPENVPN-Manuelle.pdf
  
